@@ -277,5 +277,6 @@ void app_main(void)
 
     xTaskCreate(channel_hopper, "chanhop", 4096, NULL, 1, NULL);
 
-    printf("=== ADVANCED WIFI SNIFFER STARTED ===\n");
+    printf("=== WIFI ANALYZER STARTED ===\n");
+    
 }
