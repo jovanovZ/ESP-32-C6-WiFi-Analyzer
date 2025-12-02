@@ -76,7 +76,7 @@ static void decode_rsn(const uint8_t *data, int len)
         uint8_t tag  = data[index];
         uint8_t size = data[index+1];
 
-        if (tag == 0x30) { // RSN IE
+        if (tag == 0x30) { 
             printf("    Encryption: WPA2/WPA3\n");
 
             uint8_t group_cipher = data[index+2+3];
