@@ -78,4 +78,5 @@ Ta projekt demonstrira osnovno uporabo ESP-IDF za delo z Wi-Fi paketnim snifferj
 
 ### 📸 Screenshot (primer iz terminala)
 <img width="611" height="477" alt="image" src="https://github.com/user-attachments/assets/63826a1d-2b91-4b49-912e-be656a142b96" />
+<img width="525" height="444" alt="image" src="https://github.com/user-attachments/assets/86183c30-14f0-49b7-9c3c-f8b175bb96f2" />
 
