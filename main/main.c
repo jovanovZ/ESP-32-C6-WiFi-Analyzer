@@ -6,7 +6,6 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 
-static const char *TAG = "SNIFFER";
 
 
 typedef struct {
@@ -47,13 +46,13 @@ static const char *lookup_vendor(const uint8_t *mac)
 
 static void extract_ssid(const uint8_t *data, int len)
 {
-    int index = 36; // after timestamp + interval + capability
+    int index = 36; 
 
     while (index < len - 2) {
         uint8_t tag  = data[index];
         uint8_t size = data[index+1];
 
-        if (tag == 0x00) {  // SSID element
+        if (tag == 0x00) {  
             printf("    SSID: ");
             if (size == 0) printf("<hidden>\n");
             else {
@@ -161,7 +160,7 @@ static void check_eapol_handshake(const uint8_t *data, int len)
         return; 
     }
 
-    printf("  >>> WPA2/WPA3 EAPOL frame detected!\n");
+    printf("  >>> WPA2/WPA3 EAPOL detected\n");
 
     const uint8_t *eapol = &data[32];
 
